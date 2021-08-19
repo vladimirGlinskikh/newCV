@@ -1,22 +1,86 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
-  <meta charset="UTF-8">
-  <title>Test page</title>
-  <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"
-        th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
-        rel="stylesheet" media="screen"/>
-
-  <script src="http://cdn.jsdelivr.net/webjars/jquery/3.5.1/jquery.min.js"
-          th:src="@{/webjars/jquery/3.5.1/jquery.min.js}"></script>
-
-  <link href="../static/css/spring-core.css"
-        th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>
+    <meta charset="UTF-8">
+    <title>Test page</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/css/timeline.css">
+    <link rel="stylesheet" href="/static/css/app.css">
 </head>
+
 <body>
 <div class="container">
-  <h1>Hello Spring CV</h1>
-  <h2>This is my Thymeleaf CV index page</h2>
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <img src="/static/img/avatar.jpg" class="img-responsive" style="width: 100%">
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Languages</h3>
+                </div>
+                <div class="panel-body">Languages</div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Hobbies</h3>
+                </div>
+                <div class="panel-body">Hobbies</div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Info</h3>
+                </div>
+                <div class="panel-body">Info</div>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Objective</h3>
+                </div>
+                <div class="panel-body">Objective</div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Skills</h3>
+                </div>
+                <div class="panel-body">Skills</div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Practice</h3>
+                </div>
+                <div class="panel-body">Practice</div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Certificates</h3>
+                </div>
+                <div class="panel-body">Certificates</div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Courses</h3>
+                </div>
+                <div class="panel-body">Courses</div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Education</h3>
+                </div>
+                <div class="panel-body">Education</div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script src="/static/js/jquery-3.4.1.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script src="/static/js/app.js"></script>
 </body>
 </html>
