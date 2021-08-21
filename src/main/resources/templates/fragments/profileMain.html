@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="fragments/bootstrap.html"></head>
+
+<body>
+<div th:fragment="profileMain">
+    <div class="panel panel-primary">
+        <div class="panel-body">
+            <img th:src="@{img/avatar.jpg}" class="img-responsive"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
