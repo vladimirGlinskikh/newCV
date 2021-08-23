@@ -3,11 +3,26 @@
 
 <head th:insert="fragments/bootstrap.html"></head>
 
+
 <body>
 <div th:fragment="profileMain">
     <div class="panel panel-primary">
         <div class="panel-body">
             <img th:src="@{img/avatar.jpg}" class="img-responsive"/>
+        </div>
+        <h1 class="text-center">
+            <a style="color: #5D6D7E;" href="/edit">Vladimir Glinskikh</a>
+        </h1>
+        <h5 class="text-center" style="color: #5D6D7E">
+            <strong>country Kazakhstan</strong>
+        </h5>
+        <div class="list-group contacts">
+            <a style="color: #5D6D7E" class="list-group-item" href="tel:+77019321740"><i class="fa fa-phone"></i>  +7(701)9321740</a>
+            <a style="color: #5D6D7E" class="list-group-item" href="mailto:vladimir.v.glinskikh@gmail.com"><i class="fa fa-envelope"></i>  vladimir.v.glinskikh@gmail.com</a>
+            <a style="color: #5D6D7E" class="list-group-item" href="javascript:void(0);"><i class="fa fa-skype"></i>  vladimir glinskikh</a>
+            <a style="color: #5D6D7E" target="_blank" class="list-group-item" href="https://www.linkedin.com/in/vladimir-glinskikh-097a0a158/"><i class="fa fa-linkedin"></i>  Vladimir Glinskikh</a>
+            <a style="color: #5D6D7E" target="_blank" class="list-group-item" href="https://github.com/vladimirGlinskikh"><i class="fa fa-github"></i>  Vladimir Glinskikh</a>
+            <a style="color: #5D6D7E" target="_blank" class="list-group-item" href="https://ru.stackoverflow.com/users/29598/vladimir-glinskikh?tab=profile"><i class="fa fa-stack-overflow"></i>  Vladimir Glinskikh</a>
         </div>
     </div>
 </div>
